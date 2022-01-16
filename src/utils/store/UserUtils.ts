@@ -1,6 +1,5 @@
 import { UserLoggedResponse } from "@/application/contracts/core/users/UserLoggedResponse";
 import { UserDto } from "@/application/dtos/core/users/UserDto";
-import { UserType } from "@/application/enums/core/users/UserType";
 import i18n from "@/locale/i18n";
 import store from "@/store";
 import { resetAccountState, setLogged } from "@/store/modules/accountReducer";
