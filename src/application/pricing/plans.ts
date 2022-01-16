@@ -2,7 +2,7 @@ import { SubscriptionProductDto } from "@/application/dtos/core/subscriptions/Su
 import { SubscriptionBillingPeriod } from "@/application/enums/core/subscriptions/SubscriptionBillingPeriod";
 import { SubscriptionPriceType } from "@/application/enums/core/subscriptions/SubscriptionPriceType";
 
-const currency = import.meta.env.VUE_APP_CURRENCY?.toString() ?? "usd";
+const currency = import.meta.env.VITE_REACT_APP_CURRENCY?.toString() ?? "usd";
 const plans: SubscriptionProductDto[] = [
   {
     serviceId: "",
