@@ -127,7 +127,7 @@
       "send": "Send",
       "users": "Number of users",
       "comments": "Questions or comments",
-      "setup": "Update the .env variable VITE_REACT_APP_INTEGRATIONS_LOGGING_SENTRY"
+      "setup": "Update the .env variable VITE_REACT_APP_INTEGRATIONS_CONTACT_FORMSPREE"
     },
     "faq": {
       "title": "Frequently asked questions",
