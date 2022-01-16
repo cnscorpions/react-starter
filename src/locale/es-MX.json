@@ -210,47 +210,6 @@
           "title": "ESLint",
           "description": "Aplica tus propias reglas de código usando"
         }
-      },
-      "backend": {
-        "hint": ".NET",
-        "title": "Funcionalidades Backend",
-        "description": "Multi-organización, Arquitectura limpia, pruebas de integración, subscripciones en Stripe y correos en Postmark.",
-        "features": {
-          "net": {
-            "title": ".NET",
-            "description": "Web API desarrollada con el framework de Microsoft, .NET."
-          },
-          "cleanArchitecture": {
-            "title": "Arquitectura Limpia",
-            "description": "Solución dividida en múltiples 'capas': Domain, Application, Infrastructre, Tests y ClientApp (frontend)."
-          },
-          "tests": {
-            "title": "Pruebas de Integración",
-            "description": "Casi todos los controladores tienen sus propias pruebas de integración."
-          },
-          "multiTenant": {
-            "title": "Multi-organización & multi-empresa",
-            "description": "Diseñado para tener una organización por cuenta/subscripción. Cada organización puede tener 1 o más empresas/workspaces."
-          },
-          "memberManagement": {
-            "title": "Administración de miembros",
-            "description": "Invita a tus usuarios como Propietario, Admin, Miembro o Invitado. O agrega tus propios roles."
-          },
-          "stripe": {
-            "title": "Subscripciones en Stripe",
-            "description": "Configura tus planes y precios de manera que haga sentido con tu SaaS.",
-            "setup": "Clic aquí para configurar."
-          },
-          "postmark": {
-            "title": "Correos con Postmark",
-            "description": "Configura tus correos personalizados (o usa los existentes) con Postmark.",
-            "setup": "Clic aquí para configurar."
-          },
-          "ef": {
-            "title": "Entity Framework",
-            "description": "Bases de datos soportadas por EF Core. Implementación actual: PostgreSql."
-          }
-        }
       }
     }
   },

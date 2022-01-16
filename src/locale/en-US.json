@@ -210,47 +210,6 @@
           "title": "ESLint",
           "description": "Lint your code with your own rules, using"
         }
-      },
-      "backend": {
-        "hint": ".NET",
-        "title": "Backend Features",
-        "description": "Multi-organizations/tenants, clean architecture, integration tests, Stripe subscriptions and Postmark Emails.",
-        "features": {
-          "net": {
-            "title": ".NET",
-            "description": "Web API built on top of Microsoft's framework, .NET."
-          },
-          "cleanArchitecture": {
-            "title": "Clean Architecture",
-            "description": "Solution split the project into multiple 'layers': Domain, Application, Infrastructre, Tests and ClientApp (frontend)."
-          },
-          "tests": {
-            "title": "Integration Tests",
-            "description": "Almost every controller method has its own integration test."
-          },
-          "multiTenant": {
-            "title": "Multi-organization & multi-workspace",
-            "description": "Designed to have tenants per account/subscription. Each tenant can have 1 or more workspaces."
-          },
-          "memberManagement": {
-            "title": "Member management",
-            "description": "Invite users as Owner, Admin, Member or Guest. Or add your custom roles."
-          },
-          "stripe": {
-            "title": "Stripe Subscriptions",
-            "description": "Configure your plans and pricing the way it makes sense for your SaaS.",
-            "setup": "Click here to setup."
-          },
-          "postmark": {
-            "title": "Postmark Emails",
-            "description": "Setup your custom email tempaltes with Postmark.",
-            "setup": "Click here to setup."
-          },
-          "ef": {
-            "title": "Entity Framework",
-            "description": "EF Core supported databases. Current implementation: PostgreSql."
-          }
-        }
       }
     }
   },
