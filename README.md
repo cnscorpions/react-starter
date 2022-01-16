@@ -1,6 +1,6 @@
 ## saasfrontends-react-starter
 
-![React Codebase](https://yahooder.sirv.com/saasfrontends/meta/seo-react.png)
+![React Codebase](https://yahooder.sirv.com/saasfrontends/github/react.png)
 
 ### Features
 
@@ -19,12 +19,12 @@
 
 ### Edition
 
-| Edition   | Vue2 | Vue3 | React | Svelte |
-| --------- | ---- | ---- | ----- | ------ |
-| Starter   |      |      | ✔️    |        |
-| Sandbox   |      |      |       |        |
-| Essential |      |      |       |        |
-| Premium   |      |      |       |        |
+| Edition   | [Vue2](https://github.com/AlexandroMtzG/vue2-starter) | [Vue3](https://github.com/AlexandroMtzG/vue3-starter) | [React](https://github.com/AlexandroMtzG/react-starter) | [Svelte](https://github.com/AlexandroMtzG/svelte-starter) |
+| --------- | ----------------------------------------------------- | ----------------------------------------------------- | ------------------------------------------------------- | --------------------------------------------------------- |
+| Starter   |                                                       |                                                       | ✔️                                                      |                                                           |
+| Sandbox   |                                                       |                                                       |                                                         |                                                           |
+| Essential |                                                       |                                                       |                                                         |                                                           |
+| Premium   |                                                       |                                                       |                                                         |                                                           |
 
 [View all editions](https://saasfrontends.com/docs/editions).
 
