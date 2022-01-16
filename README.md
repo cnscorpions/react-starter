@@ -32,7 +32,6 @@
 
 Find and replace the following values:
 
-- **PRODUCT_URL**: your website URL (without https or slashes)
 - **DEVELOPMENT_STRIPE_PUBLIC_KEY**
 - **DEVELOPMENT_STRIPE_SECRET_KEY**
 - **PRODUCTION_STRIPE_PUBLIC_KEY**
