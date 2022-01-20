@@ -5,8 +5,7 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "serve": "vite preview",
-    "lint": "eslint  --ext .ts,tsx .",
-    "prestart": "postcss src/assets/css/index.css -o src/assets/css/out.css"
+    "lint": "eslint  --ext .ts,tsx ."
   },
   "dependencies": {
     "@headlessui/react": "^1.4.2",
