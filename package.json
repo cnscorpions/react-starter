@@ -31,6 +31,7 @@
     "react-pdf": "^5.5.0",
     "react-redux": "^7.2.6",
     "react-router-dom": "^6.0.2",
+    "register-service-worker": "^1.7.2",
     "tiny-emitter": "^2.1.0",
     "tslib": "^2.3.1"
   },
