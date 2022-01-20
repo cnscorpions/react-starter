@@ -11,7 +11,6 @@ import Terms from "@/views/front/TermsAndConditions";
 import Components from "@/views/front/Components";
 
 import { Helmet, HelmetProvider } from "react-helmet-async";
-import "@/locale/i18n";
 import { useEffect } from "react";
 import Login from "@/views/front/account/Login";
 import Register from "@/views/front/account/Register";
