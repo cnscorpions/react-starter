@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { RootState } from "@/store";
 import { Theme } from "@/application/enums/shared/Theme";
@@ -22,6 +22,12 @@ import JoinTenant from "@/views/front/account/JoinTenant";
 
 import ScrollToTop from "./router/ScrollToTop";
 import TopBanner from "./components/ui/banners/TopBanner";
+import { UserType } from "./application/enums/core/users/UserType";
+import PrivateRoute from "./router/PrivateRoute";
+import AdminIndex from "./views/admin/Index";
+import Dashboard from "./views/core/Dashboard";
+import { TenantUserRole } from "./application/enums/core/tenants/TenantUserRole";
+import AppIndex from "./views/core/Index";
 
 export default function App() {
   const theme = useSelector<RootState>((state) => state.theme.value);
@@ -61,6 +67,35 @@ export default function App() {
           <Route path="/reset" element={<Reset />} />
           <Route path="/invitation" element={<Invitation />} />
           <Route path="/join/:tenant" element={<JoinTenant />} />
+        </Route>
+
+        {/* <Route path="/admin" element={<Navigate replace to="/admin/tenants" />} /> */}
+        <Route
+          path="/admin"
+          element={
+            <PrivateRoute userTypes={[UserType.Admin]}>
+              <AdminIndex />
+            </PrivateRoute>
+          }
+        ></Route>
+
+        <Route path="/app" element={<Navigate replace to="/app/dashboard" />} />
+        <Route
+          path="/app"
+          element={
+            <PrivateRoute>
+              <AppIndex />
+            </PrivateRoute>
+          }
+        >
+          <Route
+            path="dashboard"
+            element={
+              <PrivateRoute roles={[TenantUserRole.OWNER, TenantUserRole.ADMIN, TenantUserRole.MEMBER]}>
+                <Dashboard />
+              </PrivateRoute>
+            }
+          />
         </Route>
       </Routes>
     </Router>

@@ -1,5 +1,6 @@
 import { UserLoggedResponse } from "@/application/contracts/core/users/UserLoggedResponse";
 import { UserDto } from "@/application/dtos/core/users/UserDto";
+import { UserType } from "@/application/enums/core/users/UserType";
 import i18n from "@/locale/i18n";
 import store from "@/store";
 import { resetAccountState, setLogged } from "@/store/modules/accountReducer";
@@ -38,7 +39,7 @@ const profileName = (user: UserDto | null): string => {
 };
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-const logged = (response: UserLoggedResponse, _navigate: NavigateFunction) => {
+const logged = (response: UserLoggedResponse, navigate: NavigateFunction) => {
   store.dispatch(login(response));
   const tenants = response.user.tenants.map((f) => f.tenant);
   const currentTenant = response.user.currentTenant;
@@ -50,16 +51,16 @@ const logged = (response: UserLoggedResponse, _navigate: NavigateFunction) => {
     i18n.changeLanguage(response.user.locale ?? "en");
   }
 
-  // const redirect = new URLSearchParams(location.search).get("redirect");
-  // if (redirect) {
-  //   navigate(redirect);
-  // } else {
-  //   if ((response.user as UserDto).type === UserType.Admin && import.meta.env.VITE_REACT_APP_SERVICE !== "sandbox") {
-  //     navigate("/admin");
-  //   } else {
-  //     navigate("/app/dashboard");
-  //   }
-  // }
+  const redirect = new URLSearchParams(location.search).get("redirect");
+  if (redirect) {
+    navigate(redirect);
+  } else {
+    if ((response.user as UserDto).type === UserType.Admin && import.meta.env.VITE_REACT_APP_SERVICE !== "sandbox") {
+      navigate("/admin");
+    } else {
+      navigate("/app/dashboard");
+    }
+  }
 };
 
 const loggedOut = (navigate: NavigateFunction) => {

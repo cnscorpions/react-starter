@@ -87,7 +87,7 @@ export const AppSidebar: SideBarItem[] = [
     items: [
       {
         title: i18n.t("admin.switchToAdmin"),
-        path: "/admin/tenants",
+        path: "/admin",
         icon: SvgIcon.ADMIN,
         userTypes: [UserType.Admin],
       },
