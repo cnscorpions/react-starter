@@ -4,6 +4,7 @@
 
 ### Features
 
+- [Vite](https://vitejs.dev/)
 - [Modular persisted store](https://saasfrontends.com/docs/store)
 - [Meta tags](https://saasfrontends.com/docs/meta-tags)
 - [i18n](https://saasfrontends.com/docs/i18n)
